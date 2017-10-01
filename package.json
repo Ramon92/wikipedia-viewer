@@ -1,6 +1,7 @@
 {
   "name": "wikipedia-viewer",
   "version": "0.1.0",
+  "homepage": "https://Ramon92.github.io/wikipedia-viewer",
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
@@ -9,10 +10,13 @@
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "lodash": "^4.17.4",
     "react-scripts": "^1.0.13"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",

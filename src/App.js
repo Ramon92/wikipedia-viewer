@@ -78,7 +78,7 @@ class App extends Component {
                 <RandomButton toRandomArticle={this.toRandomArticle}/>
                 <div>
                     <form onSubmit={this.handleSubmit}>
-                        <input className="App__searchBox" value={this.state.keyword} onChange={this.handleChange}/>
+                        <input className="App__searchBox" placeholder="Subject to search" value={this.state.keyword} onChange={this.handleChange}/>
                     </form>
                 </div>
                 <ul className="App__list">

@@ -19,4 +19,17 @@
       text-decoration: none;
     }
   }
+
+  &__searchBox {
+    background: transparent;
+    padding: 10px 10px;
+    border: solid #003872 3px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+
+    &::placeholder {
+      color: lighten(#DDDDDD, 5%);
+    }
+  }
 }
