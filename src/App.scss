@@ -27,6 +27,8 @@
     border-radius: 10px;
     color: white;
     font-size: 1.2em;
+    width: 100vw;
+    max-width: 400px;
 
     &::placeholder {
       color: lighten(#DDDDDD, 5%);
